@@ -1,2 +1,4 @@
 colors/carbonize-dark.vim 
 colors/afterglow.vim
+bundle/*
+plugged/*
