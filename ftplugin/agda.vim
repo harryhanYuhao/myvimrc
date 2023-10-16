@@ -15,8 +15,5 @@ function Run()
 	exec "!echo; echo " .. separator .. "; echo ; echo " .. red .. command .. reset "; echo; " command
 endfunction
 
-	
-
-"nnoremap <F3> :!echo ./"%:t:r"; ./"%:t:r" <CR>
 nnoremap <F3> :call Run() <CR>
 inoremap <F3> <Esc>:call Compile() <CR>
