@@ -10,3 +10,32 @@ Comments starts with `"`
 ```
 
 ## Vim Functionalities Reference
+
+### Vim script
+
+#### Variables
+
+This is how to assign variables:
+
+```
+let a = "echo"
+```
+
+#### Function
+
+Functions are defined like this in vimscript
+
+```
+function Run()
+    echom yes!
+endfunction
+```
+
+A function name must begin with capital letter.
+
+To call a function in Ex mode/ command mode, use `call Run()`
+
+#### Strings
+
+#### Bash interface
+
