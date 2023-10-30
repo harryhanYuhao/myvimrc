@@ -18,6 +18,7 @@ set shiftwidth=4
 
 syntax on
 filetype plugin indent on
+" setlocal spell spelllang=en_gb
 
 " Keymaps
 " <F1> originally maps to open help doc, equivalent to :h
@@ -28,5 +29,17 @@ inoremap <F1> <Esc>:w<CR>
 call plug#begin()
 
 Plug 'derekelkins/agda-vim'
+Plug 'kaarmu/typst.vim', { 'for': 'typst' }
+Plug 'SirVer/ultisnips'
 
 call plug#end()
+
+
+" Ultisnip
+" Trigger configuration. You need to change this to something other than <tab> if you use one of the following:
+" - https://github.com/Valloric/YouCompleteMe
+" - https://github.com/nvim-lua/completion-nvim
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-l>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipsEditSplit="tabdo"
