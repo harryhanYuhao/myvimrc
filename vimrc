@@ -17,13 +17,21 @@ set tabstop=4
 set shiftwidth=4
 
 syntax on
+set hlsearch
 filetype plugin indent on
 " setlocal spell spelllang=en_gb
 
 " Keymaps
+" Set mapleader. Refering it as <leader>
+let g:mapleader=" "
 " <F1> originally maps to open help doc, equivalent to :h
+
 nnoremap <F1> :w<CR>
 inoremap <F1> <Esc>:w<CR>
+
+" custom commands
+
+command W w
 
 " Plugins
 call plug#begin()
