@@ -109,6 +109,28 @@ enddef
 ```
 
 
+
+### Strings Manipulation
+
+### Bash interface
+
+## Misc Helpful APIs
+
+### Restore to previous position
+
+```
+var view = winsaveview()
+# Move around, make changes
+winrestview(view)
+```
+
+### Check executable
+
+```
+executable('executable')
+```
+Check if `executable` exists in $PATH.
+
 ## Vim legact Functionalities Reference
 
 ### Variables
@@ -132,18 +154,3 @@ endfunction
 A function name must begin with **capital** letter.
 
 To call a function in Ex mode/ command mode, use `call Run()`
-
-### Strings Manipulation
-
-### Bash interface
-
-## Misc Helpful APIs
-
-### Restore to previous position
-
-```
-var view = winsaveview()
-# Move around, make changes
-winrestview(view)
-```
-
