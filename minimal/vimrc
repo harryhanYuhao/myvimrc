@@ -1,0 +1,6 @@
+syntax on
+set number
+set relativenumber
+set shiftwidth=4
+set tabstop=4
+set listchars=tab:\\x20\\x20\\x3e

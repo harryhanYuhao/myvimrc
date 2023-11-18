@@ -28,6 +28,7 @@ let g:mapleader=" "
 
 nnoremap <F1> :w<CR>
 inoremap <F1> <Esc>:w<CR>
+nnoremap <leader>s :w<CR>:source %<CR>
 
 " custom commands
 
