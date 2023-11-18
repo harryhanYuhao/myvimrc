@@ -3,4 +3,5 @@ set number
 set relativenumber
 set shiftwidth=4
 set tabstop=4
+set lcs=tab:
 set listchars=tab:\\x20\\x20\\x3e
