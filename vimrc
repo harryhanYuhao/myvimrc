@@ -18,6 +18,9 @@ set shiftwidth=4
 
 syntax on
 set hlsearch
+set ignorecase
+set smartcase
+
 filetype plugin indent on
 " setlocal spell spelllang=en_gb
 

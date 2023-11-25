@@ -3,5 +3,22 @@ set number
 set relativenumber
 set shiftwidth=4
 set tabstop=4
-set lcs=tab:
+set lcs=tab:\ >
+" the next command may not be supported for older vim version.
+" It it is not working, delete it
 set listchars=tab:\\x20\\x20\\x3e
+
+set ignorecase
+set smartcase
+
+" key make for make and execute
+let g:filenameNoExtention = expand('%:t:r')
+
+func ExecuteFile()
+    execute "!./" . g:filenameNoExtention
+endfunc
+
+inoremap <F1> <Esc>:w<CR>:!make<CR>
+nnoremap <F1> <Esc>:w<CR>:!make<CR>
+nnoremap <F2> :w<CR>:call ExecuteFile()<CR>
+inoremap <F2> <Esc>:w<CR>:call ExecuteFile()<CR>
